@@ -1,0 +1,41 @@
+{
+    "hortfruit":
+    [
+        {
+            "id": 1,
+            "fruta": "Nome:",
+            "valor": "Daniel Sobrinho",
+            "foto": "/assets/1.png"
+        },
+        {
+            "id": 2,
+            "fruta": "Idade:",
+            "valor": "16 Anos",
+            "foto": "/assets/1.png"
+        },
+        {
+            "id": 3,
+            "fruta": "CPF:",
+            "valor": "123.456.789-12",
+            "foto": "/assets/1.png"
+        },
+        {
+            "id": 4,
+            "fruta": "RG:",
+            "valor": "21.321.321-56",
+            "foto": "/assets/1.png"
+        },
+        {
+            "id": 5,
+            "fruta": "Conta Corrente:",
+            "valor": "R$ 5600,00",
+            "foto": "/assets/1.png"
+        },
+        {
+            "id": 6,
+            "fruta": "Investimento:",
+            "valor": "R$ 870,40 PETR4",
+            "foto": "/assets/1.png"
+        }
+    ]
+}
