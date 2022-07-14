@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import {Text, View, StyleSheet, FlatList, TouchableOpacity, Alert, Image} from 'react-native';
-import api from '../pages/Api';
+import {Text, View, StyleSheet, FlatList, TouchableOpacity, Alert} from 'react-native';
+import api from '../Api';
 
-export default function Frutas(){
+export default function ListarFrutas(props){
 
 const[dadosFrutas, setdadosFrutas] = useState([]);    
 
@@ -25,7 +25,16 @@ useEffect(async()=> {
 
     return(
         <View style={styles.container}>
-            <Text style={styles.titulo}>Dados Cliente</Text>
+            <Text style={styles.titulo}>Lista de Frutas</Text>
+
+            <TouchableOpacity style={styles.botaoCadFruta} onPress={()=> props.navigation.navigate('Cadastrar')}>
+                <Text style={styles.textoBotaoCadFruta}>Cadastrar Fruta</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.botaoCadFruta} onPress={()=> props.navigation.navigate('Alterar')}>
+                <Text style={styles.textoBotaoCadFruta}>Alterar Fruta</Text>
+            </TouchableOpacity>
+
             <FlatList
                 data={dadosFrutas}
                 keyExtractor={dadosFrutas => dadosFrutas.id}
@@ -47,7 +56,7 @@ useEffect(async()=> {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#D873FA',
+      backgroundColor: '#F9FAA4',
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -62,7 +71,7 @@ const styles = StyleSheet.create({
     },
 
     botaofrutas: {
-        backgroundColor: '#0FA935',
+        backgroundColor: '#FA7664',
         width: 200,
         height: 80,
         borderRadius: 40,

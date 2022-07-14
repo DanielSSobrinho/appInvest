@@ -5,7 +5,7 @@ import {Text, View, StyleSheet, ImageBackground} from 'react-native';
 export default function Home(){
     return(
         <View style={styles.container}>
-            <ImageBackground  style={styles.backgroundImage} source={require('../assets/invest.gif')}>
+            <ImageBackground  style={styles.backgroundImage} source={require('../assets/HortFruit.gif')}>
 
             </ImageBackground>
             <StatusBar style="auto" />
